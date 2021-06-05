@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="cssStyles/Homepage.css"/>
+        <link rel="stylesheet" href="./cssStyles/style.css"/>
         <title>Triple Mood</title>
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,11 +20,11 @@
                   <div class="navbar-wrapper container">
                     <nav class="navbar">
                         <div class="brand-and-toggler container">
-                            <a href="index.html" target="_blank" class="navbar-brand">TM</a>
+                            <a href="index.html" class="navbar-brand">TM</a>
                             <button type="button" class="navbar-toggler" id="navbar-toggler">
                               <div class="bar1"></div>
                               <div class="bar2"></div>
-                                <div class="bar3"></div>
+                              <div class="bar3"></div>
                             </button>
                         </div>                   
                     </nav>
@@ -34,9 +34,9 @@
                                 <a href="#home" class-"nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#music" class-"nav-link">Music</a>
+                                <a href="#music-gallery" class-"nav-link">Videos</a>
                             </li>
-                            <li class="nav-item">
+                            <!--<li class="nav-item">
                                 <a href="#photos" class-"nav-link">Photos</a>
                             </li>
                             <li class="nav-item">
@@ -47,23 +47,99 @@
                             </li>
                             <li class="nav-item">
                                 <a href="#contact" class-"nav-link">Contact</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
                 <!-- end of navbar -->
                 <div class="header-banner container">
                     <h1 class="banner-title">Triple Mood</h1>
-                    <p class="normal-text">                   
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    <p class="normal-text">
+                    Triple Mood (previously known as the Kaeli Earle Trio) is a jazz/funk group from Seattle, Washington comprised of three longtime friends. Kaeli Earle is the bassist-and-vocalist who writes the tunes, Alex Roemmele is the drummer and engineer who mixes the tunes, and Conner Helms is the saxophonist-and-pianist who makes the videos.
+                    <br><br>
+They have a tight-knit musical chemistry, filling rooms with improvised jams, grooves and original music. The band is about to release their first studio EP, Stay Gold, and just returned from playing their first international festival, the Lancaster music festival in Lancaster, UK.
                     </p>
                     <div class="banner-buttons">
-                        <button type="button" class="banner-button">Start Here</button>
-                        <button type="button" class="banner-button">Learn More</button>
+                      <!-- <button type="button" class="banner-button"></button>-->
+                      <button type="button" class="banner-button"><a href="mailto: kaeliearlebooking@gmail.com">Book Us</a></button>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- end header -->
+        <section class="Music-Gallery" id="music-gallery">
+             <div class="section-header">
+               <h1 class="section-heading">Videos</h1>
+                 <div class="underline-2"></div>
+             </div>
+             <div class="cards-wrapper">
+                 <a href="https://www.youtube.com/watch?v=miUQNcyGGo0&t=2s" target="blank">
+                     <div class="card">
+                     <div class="card-img-wrapper">
+                         <img src="images/MrButterflyThumbnail.png" alt="Mr Butterfly Photo">
+                     </div>
+                     <div class="card-info">
+                         <h2>Mr. Butterfly</h2>
+                         <h3>Original by Kaeli Earle</h3>
+                         <button>Click to View</button>
+                     </div>
+                 </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=eM4TJzku_8E" target="blank">
+                 <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/InfatuationThumbnail.png" >
+                    </div>
+                    <div class="card-info">
+                        <h2>Infatuation</h2>
+                        <h3>Original by Kaeli Earle</h3>
+                        <button>Click to View</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="cards-wrap">
+            <a href="https://www.youtube.com/watch?v=DU-M2Hr3meE" target="blank">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/StartingAtTheSunThumbnail.png" target="blank" alt="Production-img">
+                    </div>
+                    <div class="card-info">
+                        <h2>Staring At The Sun </h2>
+                        <h3>Cover by TV On The Radio</h3>
+                        <button>Click to View</button>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=FKv56VOoXD8" target="blank">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/DevilDuckThumbnail.png" alt="Production-img">
+                    </div>
+                    <div class="card-info">
+                        <h2>Devil Duck & the Fat Beat</h2>
+                        <h3>Original</h3>
+                        <button>Click to View</button>
+                    </div>
+                </div>
+            </a>
+        </section>
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="copyright">
+                    Copyright &copy; 2021, Triple Mood - 
+                    All Rights Reserved
+                </p>
+                <p>
+                  
+                </p>
+                <div class="social-list">
+                    <a href="https://www.facebook.com/groups/1780656878919113/user/100013522115923" target="blank">FACEBOOK</a>
+                    <a href="https://soundcloud.com/aman-almeida-184330713" target="blank">SOUNDCLOUD</a>
+                    <a href="https://www.linkedin.com/in/aman-almeida-209b62183/" target="blank">LINKEDIN</a>
+                </div>
+            </div>
+        </footer>
         <!-- JQuery -->
         <script
 			  src="https://code.jquery.com/jquery-3.6.0.js"

@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "../SorviusN.github.io"
+	},
+	{
+		"path": "../amanalmeida"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "amanalmeida"
+  }
+}
