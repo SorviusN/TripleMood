@@ -1,6 +1,6 @@
 :root {
   --TMGreen: #133011;
-  --TMBlue: #3A5F68;
+  --TMBlue: #a45ec4;
   --black-russian: #1c1d21;
   --snow: #fafafa;
   --light-gray: #eee;
@@ -93,7 +93,7 @@ display: flex;
 
 .navbar {
   position: fixed;
-  background: var(--TMGreen);
+  background: var(--TMBlue);
   padding: 0.5rem 0;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
   width: 100%;
@@ -215,9 +215,8 @@ background: var(--TMBlue);
 opacity: 0.8;
 }
 
-
 .Music-Gallery {
-  background-color: #133011;
+  background-color: var(--TMBlue);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -232,11 +231,13 @@ opacity: 0.8;
   font-weight: 400;
   color: var(--snow);
 }
+
 .cards-wrapper {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 4rem;
   margin-right: 4rem;
+  margin-top: 4rem;
   width: 100%;
   overflow-wrap: normal;
 }
@@ -325,14 +326,14 @@ opacity: 0.8;
 .footer {
   width: 100%;
   height: 10rem;
-  background-color: #3A5F68;;
+  background-color: var(--TMGreen);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .footer-content {
-  width: 75%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
 }
