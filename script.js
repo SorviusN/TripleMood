@@ -13,6 +13,7 @@ $(document).ready(function() {
     if (position >= 60) {
       $('.navbar-wrapper').removeClass('container');
       $('navbar-wrapper').addClass('fxd-navbar-wrapper');
+      console.log('hello');
     }
     else {
       $('.navbar-wrapper').addClass('container');

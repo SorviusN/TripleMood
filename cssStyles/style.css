@@ -1,19 +1,19 @@
 :root {
-  --TMGreen: #133011;
-  --TMBlue: #a45ec4;
+  --TMGreen: #1e392a;
+  --TMBlue: #008f95;
   --black-russian: #1c1d21;
   --snow: #fafafa;
   --light-gray: #eee;
 }
 
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*Utility Classes + styling */
@@ -26,7 +26,13 @@ li {
   list-style-type: none;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0.8rem 0;
   color: #fafafa;
 }
@@ -51,7 +57,7 @@ button {
 /*header */
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-  url(../images/BGPhoto1.jpg) center/cover fixed no-repeat;
+    url(../images/BGPhoto1.jpg) center/cover fixed no-repeat;
 }
 
 .video-container {
@@ -70,7 +76,9 @@ button {
   min-height: 100vh;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 26px;
   height: 4px;
   background: black;
@@ -86,7 +94,7 @@ button {
 }
 
 .brand-and-toggler {
-display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -157,7 +165,6 @@ display: flex;
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-
 /*****/
 .header-banner {
   flex: 1;
@@ -183,36 +190,36 @@ display: flex;
 }
 
 .banner-button {
-background: transparent;
-padding: 0.7rem 1rem;
-font-family: inherit;
-font-size: 1.5rem;
-border: none;
-border-radius: 3px;
-cursor: pointer;
+  background: transparent;
+  padding: 0.7rem 1rem;
+  font-family: inherit;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 .banner-button:first-child {
-background: #fafafa;
-margin-right: 0.4rem;
+  background: #fafafa;
+  margin-right: 0.4rem;
 }
 
 .banner-button:last-child {
-background: #fafafa;
-margin-right: 0.4rem;
+  background: #fafafa;
+  margin-right: 0.4rem;
 }
 
 .banner-button a {
-color: black;
+  color: black;
 }
 
 .banner-button a:hover {
-color: var(--snow);
+  color: var(--snow);
 }
 
 .banner-button:hover {
-background: var(--TMBlue);
-opacity: 0.8;
+  background: var(--TMBlue);
+  opacity: 0.8;
 }
 
 .Music-Gallery {
@@ -348,15 +355,108 @@ opacity: 0.8;
 }
 /* Media Queries */
 
-@media screen and (min-width: 992px) {
-  .header-wrapper {
-  padding:top 0;
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 88vw;
   }
 
-.navbar-wrapper {
-  position: relative!important;
-  display: grid;}
+  .header-wrapper {
+    padding: top 0;
+  }
+  .navbar-toggler {
+    display: none;
+  }
+  .navbar-wrapper {
+    position: fixed !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.8rem;
+  }
+
+  .navbar-collapse {
+    position: relative;
+    transform: translateX(0);
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background: transparent;
+  }
+
+  .navbar {
+    width: 100px;
+    background: transparent;
+    border-bottom: 0;
+  }
+
+  .navbar-nav {
+    display: flex;
+  }
+
+  .nav-item {
+    border-bottom: none;
+    position: relative;
+  }
+
+  .nav-item::after {
+    position: absolute;
+    content: "";
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background: var(--TMBlue);
+    width: 0;
+    transition: width 0.3s ease;
+  }
+
+  .nav-item:hover {
+    background: none;
+  }
+
+  .nav-item:hover::after {
+    width: 70%;
+  }
+
+  .navbar-brand {
+    color: white;
+    margin-left: 1rem;
+  }
+
+  .nav-link:hover {
+    opacity: 0.8;
+  }
+
+  .fxd-navbar-wrapper {
+    background: var(--TMBlue);
+    padding-top: 0 !important;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    padding: 0 55px 0;
+  }
+
+  .navbar-wrapper .nav-link {
+    color: black;
+    opacity: 0.8;
+  }
+
+  .navbar-wrapper .navbard-brand {
+    color: black;
+  }
+
+  .navbar-wrapper .nav-link:hover {
+    color: var(--snow);
+  }
+
+  @media screen and (min-width: 1200px) {
+    .container {
+      width: 85vw;
+    }
+
+    .navbar-wrapper {
+      padding: 0 110px 0;
+    }
+  }
 }
-
-
-
