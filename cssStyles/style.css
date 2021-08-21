@@ -264,6 +264,7 @@ img {
   text-transform: capitalize;
   text-align: center;
 }
+
 .title-underline {
   height: 5px;
   width: 40px;
@@ -287,6 +288,7 @@ img {
   display: block;
   color: white;
 }
+
  /* .overlay::after {
   content: "";
   position: absolute;
@@ -297,6 +299,7 @@ img {
   background: var();
 }
 */
+
 .Music-Gallery {
   background-color: var(--TMBlue);
   display: flex;
