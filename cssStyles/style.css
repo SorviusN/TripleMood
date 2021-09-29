@@ -218,6 +218,11 @@ img {
   margin: 0 auto;
 }
 
+.banner-email {
+  font-size: 1rem;
+  background-color: transparent;
+}
+
 .banner-buttons {
   margin-top: 1.2rem;
 }
@@ -319,7 +324,7 @@ img {
 
 .footer {
   width: 100%;
-  height: 10rem;
+  height: 8rem;
   background-color: var(--TMGreen);
   display: flex;
   justify-content: center;
@@ -334,7 +339,7 @@ img {
 
 .copyright {
   font-family: "Barlow", serif;
-  font-size: 1.4rem;
+  font-size: 1.0rem;
   background-color: transparent;
 }
 
