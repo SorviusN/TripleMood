@@ -1,24 +1,25 @@
 $(document).ready(function() {
   //navbar toggle
-  $('#navbar-toggler').click(function(){
-    $('.navbar-collapse').toggleClass('showNav');
+  $('#navbar-toggler').click(function() {
+    // "Toggling" the class "show nav" to the pre-existing class navbar-collapse.
+    // This occurs when the navbar toggler is clicked, obviously.
+    $('.navbar-collapse').toggleClass('.showNav');
   });
   // animated bar icon
   $('#navbar-toggler').click(function() {
-    $(this).toggleClass('animatedNav');
+    $(this).toggleClass('.animatedNav');
   });
   // navbar background change w/ scroll, whenever you go below the top of the screen.
   $(window).scroll(function() {
-    let position = $(window).scrollTop();
+    var position = $(window).scrollTop();
     if (position >= 60) {
-      $('.navbar-wrapper').removeClass('container');
-      $('navbar-wrapper').addClass('fxd-navbar-wrapper');
-      console.log("Scrolling down");
+      //If position of the window (set as window.scrollTop()) is greater than 60 below the top, 
+      $('.navbar-wrapper').removeClass('.container');
+      $('.navbar-wrapper').addClass('.fxd-navbar-wrapper');
     }
     else {
-      console.log("Top of page");
-      $('.navbar-wrapper').addClass('container');
-      $('navbar-wrapper').removeClass('fxd-navbar-wrapper');
+      $('.navbar-wrapper').addClass('.container');
+      $('.navbar-wrapper').removeClass('.fxd-navbar-wrapper');
     }
   })
 });
