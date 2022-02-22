@@ -9,6 +9,7 @@ $(document).ready(function() {
   $('#navbar-toggler').click(function() {
     $(this).toggleClass('.animatedNav');
   });
+
   // navbar background change w/ scroll, whenever you go below the top of the screen.
   $(window).scroll(function() {
     var position = $(window).scrollTop();

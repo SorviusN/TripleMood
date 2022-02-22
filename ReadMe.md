@@ -2,4 +2,9 @@
 
 # Website for the band Triple Mood - using Jquery.
 
+Changelog:
+- Feb 2022: Continued after long hiatus. Working on implementation of media. within first page.
+
 Developed with help from templates and references.
+
+### Jona Brown
